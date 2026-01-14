@@ -49,5 +49,165 @@ Due to size and license constraints, the dataset is **not uploaded** to this rep
 ---
 
 ## 📂 Dataset Folder Structure
+```text
+dataset/
+├── train/
+│ ├── Monkeypox/
+│ ├── Chickenpox/
+│ ├── Cowpox/
+│ ├── HFMD/
+│ ├── Measles/
+│ └── Healthy/
+│
+├── val/
+└── test/
+```
+---
+
+
+## 🧠 Model Architecture
+
+- Backbone Network: **ResNet50 (Pretrained)**
+- Feature Extraction: Convolutional Neural Network (CNN)
+- Classification Head: Transformer Encoder
+- Output Layer: Softmax (Multi-class Classification)
+- Loss Function: Cross Entropy Loss
+- Optimizer: Adam / AdamW
+- Learning Rate Scheduler: Cosine Annealing
+
+The hybrid architecture helps in capturing both **local lesion features** and **global contextual information**.
+
+---
+
+## ⚙️ Technologies Used
+
+- Python  
+- PyTorch  
+- Albumentations  
+- OpenCV  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
+- Optuna  
+- Streamlit  
+
+---
+
+## 🧪 Experimental Setup
+
+- Image preprocessing: resizing, normalization, enhancement
+- Data augmentation: rotation, flipping, brightness adjustment
+- Train–Validation–Test split
+- Early stopping and learning rate scheduling
+- Evaluation on unseen test data
+
+---
+
+## 📈 Evaluation Metrics
+
+The model performance is evaluated using:
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score  
+- ROC–AUC (Per Class & Macro Average)  
+- Precision–Recall Curves  
+- Confusion Matrix  
+- Cohen’s Kappa  
+- Matthews Correlation Coefficient (MCC)  
+
+---
+
+## 🔍 Model Interpretability
+
+To understand model decisions, the following techniques are used:
+
+- **Grad-CAM**: Highlights important skin lesion regions
+- **t-SNE**: Visualizes feature space clustering
+- **Misclassified Samples Analysis**: Identifies error patterns
+
+All evaluation outputs are stored in the `outputs/evaluation_results/` directory.
+
+---
+
+## 🌐 Streamlit Web Application
+
+The trained model is deployed using **Streamlit**, which provides:
+
+- Image upload functionality
+- Image preview
+- Disease prediction output
+- Confidence score display
+
+📸 Screenshots of the web interface are available in:
+```text
+outputs/streamlit_screenshots/
+```
+
+---
+
+## 🏗️ Project Structure
+```text
+monkeypox-disease-classification-using-deep-learning/
+│
+├── code/
+│ ├── best_model.pth
+│ ├── project.ipynb
+│ ├── streamlit_app.py
+│
+├── streamlit_app/
+│ └── app.py
+│
+├── dataset/
+│ └── README.md
+│
+├── outputs/
+│ ├── evaluation_results/
+│ └── streamlit_screenshots/
+│
+├── requirements.txt
+├── README.md
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yogeswaran-apparaj/monkeypox-disease-classification-using-deep-learning.git
+cd monkeypox-disease-classification-using-deep-learning
+```
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3. Run Streamlit App
+```bash
+streamlit run streamlit_app/app.py
+```
+---
+
+## ⚠️ Disclaimer
+
+This project is developed only for academic and educational purposes.
+It is not intended for clinical diagnosis, treatment, or medical decision-making.
+
+--- 
+
+## 👨‍🎓 Author
+
+B.Tech – Artificial Intelligence & Data Science
+Third-Year Mini Project
+
+--- 
+
+## 📜 License
+
+This project is released for academic use only.
+Dataset license follows Creative Commons CC BY 4.0.
+
 
 
