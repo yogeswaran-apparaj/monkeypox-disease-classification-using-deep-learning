@@ -1,0 +1,9 @@
+file_path,true_label,predicted_label,true_index,predicted_index
+/kaggle/input/multiclass-skin-disease-dataset/Skin Lesion Dataset/test/Chickenpox/CHP_04_05_8.jpg,Chickenpox,Cowpox,0,1
+/kaggle/input/multiclass-skin-disease-dataset/Skin Lesion Dataset/test/Chickenpox/CHP_51_01_10.jpg,Chickenpox,Monkeypox,0,5
+/kaggle/input/multiclass-skin-disease-dataset/Skin Lesion Dataset/test/Cowpox/CWP_05_01_12.jpg,Cowpox,Monkeypox,1,5
+/kaggle/input/multiclass-skin-disease-dataset/Skin Lesion Dataset/test/HFMD/HFMD_115_01_1.jpg,HFMD,Monkeypox,2,5
+/kaggle/input/multiclass-skin-disease-dataset/Skin Lesion Dataset/test/Healthy/HEALTHY_50_01_1.jpg,Healthy,Chickenpox,3,0
+/kaggle/input/multiclass-skin-disease-dataset/Skin Lesion Dataset/test/Measles/MSL_29_01_10.jpg,Measles,Monkeypox,4,5
+/kaggle/input/multiclass-skin-disease-dataset/Skin Lesion Dataset/test/Monkeypox/MKP_143_01_3.jpg,Monkeypox,Chickenpox,5,0
+/kaggle/input/multiclass-skin-disease-dataset/Skin Lesion Dataset/test/Monkeypox/MKP_92_01_10.jpg,Monkeypox,Chickenpox,5,0
