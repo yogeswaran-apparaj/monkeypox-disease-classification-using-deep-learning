@@ -198,9 +198,9 @@ It is not intended for clinical diagnosis, treatment, or medical decision-making
 --- 
 
 ## 👨‍🎓 Author
-
+#### YOGESWARAN APPARAJ
 B.Tech – Artificial Intelligence & Data Science
-Third-Year Mini Project
+
 
 --- 
 
