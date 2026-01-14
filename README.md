@@ -130,7 +130,23 @@ To understand model decisions, the following techniques are used:
 All evaluation outputs are stored in the `outputs/evaluation_results/` directory.
 
 ---
+## 🔽 Trained Model Weights
 
+Due to GitHub file size limitations, the trained model file (`best_model.pth`)
+is not included in this repository.
+
+You can download the trained model from the link below:
+
+## 🔗 Model Download Link (Google Drive):  
+
+https://drive.google.com/file/d/1AOQSpKCRw7dzD_LX9ya6h0sPTUP-qg0I/view?usp=drive_link
+
+After downloading, place the model file inside the following directory:
+
+```text
+code/best_model.pth
+```
+---
 ## 🌐 Streamlit Web Application
 
 The trained model is deployed using **Streamlit**, which provides:
